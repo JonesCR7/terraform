@@ -6,12 +6,6 @@ terraform {
     }
   }
 }
-provider "vsphere" {
-  user                 = "root"
-  password             = "tekV1z10n"
-  vsphere_server       = "172.16.30.56"
-  allow_unverified_ssl = true
-}
 data "vsphere_datacenter" "dc" {
   name = "dc1"
 }
